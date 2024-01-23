@@ -5,7 +5,7 @@ LIBRARY_PATH := $(abspath ./)
 BUILD_TYPE?=
 # keep standard at C11 and C++11
 CFLAGS   = -I./ncnn -I./ncnn/src -I./ncnn/build/src/ -I. -I./stable-diffusion/x86/vs2019_opencv-mobile_ncnn-dll_demo/vs2019_opencv-mobile_ncnn-dll_demo -O3 -DNDEBUG -std=c11 -fPIC
-CXXFLAGS = -I./ncnn -I./ncnn/src -I./ncnn/build/src/ -I. -I./stable-diffusion/x86/vs2019_opencv-mobile_ncnn-dll_demo/vs2019_opencv-mobile_ncnn-dll_demo  -O3 -DNDEBUG -std=c++17 -fPIC -fopenmp
+CXXFLAGS = -I./ncnn -I./ncnn/src -I./ncnn/build/src/ -I. -I./stable-diffusion/x86/vs2019_opencv-mobile_ncnn-dll_demo/vs2019_opencv-mobile_ncnn-dll_demo  -O3 -DNDEBUG -std=c++17 -fPIC -fopenmp=libiomp5
 LDFLAGS  = -L/opt/rocm/lib/llvm/lib -lomp
 
 # warnings
